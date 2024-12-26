@@ -1,18 +1,20 @@
-name: 'The name of your action here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'pr-ommente'
+description: 'Adds PR changes as comment'
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: 'Your input description here'
+  owner:
+    description: 'The owner of the repository'
     required: true
-    default: '1000'
-
-# Define your outputs here.
-outputs:
-  time:
-    description: 'Your output description here'
+  repo:
+    description: 'The repository name'
+    required: true
+  pr_number:
+    description: 'The pull request number'
+    required: true
+  token:
+    description: 'The GitHub token'
+    required: true
 
 runs:
   using: node20

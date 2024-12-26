@@ -1,21 +1,24 @@
 {
-  "name": "javascript-action",
-  "description": "GitHub Actions JavaScript Template",
-  "version": "0.0.0",
+  "name": "pr-comment",
+  "description": "Adds PR changes as commment",
+  "version": "1.0.0",
   "author": "",
   "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/ronaldkohhh/pr-comment#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/ronaldkohhh/pr-comment.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/ronaldkohhh/pr-comment/issues"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "Pull Request",
+    "Metadata",
+    "Comment"
   ],
   "exports": {
     ".": "./dist/index.js"
@@ -64,7 +67,8 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.11.1"
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.26.0",
